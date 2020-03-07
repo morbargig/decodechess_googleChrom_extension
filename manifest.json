@@ -1,0 +1,21 @@
+{
+  "name": "decodechess extension",
+  "options_page": "options.html",
+  "version": "1.1",
+  "description": "chess game analyzer",
+  "permissions": ["activeTab", "declarativeContent", "storage","tabs", "https://lichess.org/", "https://www.chess.com/","https://decodechess.com/" ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon_19.jpg",
+    "default_popup": "popup.html"
+
+  },
+  "icons": {
+    "16": "icon_19.jpg",
+    "128": "icon_128.jpg"
+  },
+  "manifest_version": 2
+}

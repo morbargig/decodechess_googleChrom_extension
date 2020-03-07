@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "decodechess extension",
+  "description": "chess game analyzer",
+  "version": "1.0.0",
+  "icons": { "128": "icon_128.jpg" },
+  "content_scripts": [
+    {
+      "matches": ["https://mor-bargig-cv.herokuapp.com/"],
+      "js": ["mor.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon_19.jpg",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon_19.jpg",
+      "128": "icon_128.jpg"
+    }
