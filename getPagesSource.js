@@ -1,22 +1,4 @@
 
- 
-// function getMoves() {
-//     console.log(tabs)
-//     if (tabs[0].url.includes("https://www.chess.com/")) {
-//         console.log("we can play")
-//     }
-//     if (tabs[0].url.includes("https://lichess.org/")) {
-//         let movesDiv = document.getElementsByClassName("moves")[0].childNodes
-//         let movesLength = movesDiv.length
-//         let movesRes = []
-//         for (let i = 0; i < movesLength - 1; i++) {
-//             if (i % 3 != 0) {
-//                 movesRes.push(movesDiv[i].innerHTML)
-//             }
-//         }
-//         return movesRes
-//     }
-// }
 
 
 
@@ -27,7 +9,7 @@ function getCurrentTab() {
     console.log(window.location.hostname,document.URL)
     if (document.URL.includes("https://www.chess.com/")) {
         if(document.URL.includes("https://www.chess.com/play/compute")){
-            // let movesDiv = document.getElementById("moveListControl_vertical")
+            let movesDiv = document.getElementById("moveListControl_vertical")
             chessGetMovesFromComuterPage()
         }
         chessGetMoves(movesDiv)
@@ -86,17 +68,7 @@ function  chessGetMovesFromComuterPage(){
         }
         
     }
-    console.log(newMovesDiv)
-    
-    // username
-    // newPage = window.open("https://app.decodechess.com/")   
-    // newPage.localStorage.runThis = function(){ alert("Hello world"); }
-    // newPage.localStorage.runThis()
-    // chrome.windows.create({
-    //     // Just use the full URL if you need to open an external page
-    //     url: chrome.runtime.getURL("https://app.decodechess.com/")
-    //   });
-    
+    console.log(newMovesDiv)    
 } 
 
 function sleep(ms) {
